@@ -21,10 +21,8 @@ body {
   font-size: var(--fs-preset-1-2);
   font-weight: var(--fw-extra-light);
   letter-spacing: var(--ls-wide);
-  
 }
 .feature-section__title {
-   
   /* preset 1 */
   font-size: var(--fs-preset-1-2);
   font-weight: var(--fw-semibold);
@@ -42,6 +40,7 @@ body {
 .feature-section__cards {
   display: grid;
   gap: var(--spacing-400);
+  place-content: center;
 }
 
 .feature-section__card {
@@ -55,6 +54,7 @@ body {
   position: relative;
   overflow: hidden;
   min-height: 15.5rem;
+  max-width: 21.5rem;
   box-shadow: 0 15px 20px 0 hsla(212, 86%, 64%, 0.2);
 }
 .feature-section__card::before {
@@ -66,7 +66,6 @@ body {
   height: 0.25rem;
   background-color: var(--clr-accent-cyan);
 }
-
 
 .feature-section__card[data-accent="red"]::before {
   background-color: var(--clr-accent-red);
@@ -101,7 +100,41 @@ body {
 
 /* Tablet 768px */
 @media only screen and (min-width: 48rem) {
+  .feature-section__cards {
+    grid-template-columns: repeat(2, max-content);
+  }
+  .feature-section__card {
+    justify-self: center;
+    align-self: center;
+  }
+  .feature-section__card[data-accent="red"] {
+    grid-column: span 2;
+  }
+  .feature-section__card[data-accent="cyan"] {
+    grid-row: 2/ 3;
+  }
+  .feature-section__card[data-accent="blue"] {
+    grid-column: span 2;
+  }
 }
+
 /* Desktop 1440px */
+
 @media only screen and (min-width: 90rem) {
+  .feature-section__cards {
+    grid-template-columns: repeat(3, max-content);
+  }
+  .feature-section__card[data-accent="cyan"] {
+    grid-row: 1 / -4;
+  }
+  .feature-section__card[data-accent="blue"] {
+    grid-column: 3 / 4;
+    grid-row: 1 / -4;
+  }
+  .feature-section__card[data-accent="red"] {
+    grid-column: 2 / 3;
+  }
+  .feature-section__card[data-accent="orange"] {
+    grid-column: 2 / 3;
+  }
 }
