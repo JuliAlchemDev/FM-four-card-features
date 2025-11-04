@@ -15,6 +15,9 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 
 
 ## My process
+- I initialized a new repository and submitted the project.
+- I cleaned up the README file and removed source files that I wouldn’t use.
+- I studied the design system in Figma and prepared custom CSS properties, carefully choosing reusable and consistent naming conventions.
 
 
 
@@ -28,7 +31,6 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 - Semantic HTML5 
 - CSS Grid & Flexbox
 - CSS custom properties
-- JavaScript (ES6+, fetch, async/await)
 - Mobile-first workflow
 - BEM methodology
 - Responsive design with rem and media queries

@@ -1,0 +1,52 @@
+:root {
+  /* 
+
+## Layout
+- Mobile: 375px
+- Desktop: 1440px
+
+*/
+
+  /* Colors */
+
+  --clr-accent-red: hsl(0, 78%, 62%);
+  --clr-accent-cyan: hsl(180, 62%, 55%);
+  --clr-accent-orange: hsl(34, 97%, 64%);
+  --clr-accent-blue: hsl(212, 86%, 64%);
+
+  --neutral-grey-500: hsl(234, 12%, 34%);
+  --neutral-grey-400: hsl(212, 6%, 44%);
+  --neutral-white: hsl(0, 0%, 100%);
+
+  /* Typography */
+
+  --ff-base: "Poppins", sans-serif;
+  --ls-none: 0;
+  --ls-wide: 0.25;
+
+  /* Font sizes */
+  --fs-preset-1-2: 2.25rem; /* 36px*/
+  --fs-preset-3: 1.25rem; /* 20px */
+  --fs-preset-4: 0.95rem; /* 15px */
+  --fs-preset-5: 0.8rem; /* 13px */
+
+  /* Line heights */
+
+  --lh-135: 1.35;
+  --lh-140: 1.4;
+  --lh-160: 1.6;
+
+  /* Font Weight */
+
+  --fw-extra-light: 200;
+  --fw-regular: 400;
+  --fw-semibold: 600;
+
+  /* Spacing */
+
+  --spacing-100: 0.5rem; /* 8px */
+  --spacing-200: 1rem; /* 16px */
+  --spacing-300: 1.5rem; /* 24px */
+  --spacing-400: 2rem; /* 32px */
+  --spacing-500: 2.5rem; /* 40px */
+}
