@@ -18,11 +18,24 @@ This is a solution to the [Four card feature section challenge on Frontend Mento
 - I initialized a new repository and submitted the project.
 - I cleaned up the README file and removed source files that I wouldn’t use.
 - I studied the design system in Figma and prepared custom CSS properties, carefully choosing reusable and consistent naming conventions.
+- Linked styles to the HTML and downloaded the project fonts.  
+  I also added **preload** for performance, but the browser shows a warning:  
+  *“The resource was preloaded but not used…”* — I’ll revisit and fix that later.  
 
--link styles to html, download and preload fonts(have and warning in the browser, it says: link preload but not used... i'll face it next ).
-- next step export images sizes from figma for different screens. So i checked all images sizes in a design and it use the same on over all sreens. So for better organization i put muy ingages in asssets folder. Now i can go to anilize design layout and start with semantic html and bem naming. Add some accessibilyti features like  aria-labelledby for secions. Note: Use aria-labelledby when:
-There’s visible text (like a heading, caption, or label) that already describes the element.
+- Exported image assets from Figma.  
+  After checking the design, I noticed all screen sizes use the same image dimensions,  
+  so for better organization, I placed all images inside the **assets** folder.  
 
+- Analyzed the design layout and started building the structure with **semantic HTML** and **BEM naming**.  
+
+- Added some **accessibility features**, such as `aria-labelledby` for sections.  
+  **Note:** Use `aria-labelledby` when there’s visible text (like a heading, caption, or label) that already describes the element.
+
+- Prepared **media queries** for the next design phase.  
+
+- Used `::before` pseudo-element and `overflow` to style the cards.  
+  Had some challenges recreating the exact **shadow styles** from Figma,  
+  so I decided to adjust them on my own for a balanced visual result.
 
 
 

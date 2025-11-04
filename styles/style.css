@@ -1,7 +1,107 @@
-body, html {
-    background-color: #FAFAFA;
+body,
+html {
+  background-color: #fafafa;
 }
 body {
-    font-family: var(--ff-base);
-    font-weight: var(--fw-regular);
+  font-family: var(--ff-base);
+  color: var(--neutral-grey-500);
+}
+.feature-section {
+  margin: var(--spacing-500) var(--spacing-400);
+  display: grid;
+  gap: 3.75rem;
+}
+/* Header */
+.feature-section__header {
+  text-align: center;
+  line-height: var(--lh-140);
+}
+.feature-section__summary {
+  /* preset 2 */
+  font-size: var(--fs-preset-1-2);
+  font-weight: var(--fw-extra-light);
+  letter-spacing: var(--ls-wide);
+  
+}
+.feature-section__title {
+   
+  /* preset 1 */
+  font-size: var(--fs-preset-1-2);
+  font-weight: var(--fw-semibold);
+  letter-spacing: var(--ls-wide);
+}
+.feature-section__desc {
+  margin-block-start: var(--spacing-200);
+  /* preset 4 */
+  font-size: var(--fs-preset-4);
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-none);
+}
+
+/* Card */
+.feature-section__cards {
+  display: grid;
+  gap: var(--spacing-400);
+}
+
+.feature-section__card {
+  --border-radius: 0.5rem;
+
+  background-color: var(--neutral-white);
+  padding: var(--spacing-400);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  min-height: 15.5rem;
+  box-shadow: 0 15px 20px 0 hsla(212, 86%, 64%, 0.2);
+}
+.feature-section__card::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0.25rem;
+  background-color: var(--clr-accent-cyan);
+}
+
+
+.feature-section__card[data-accent="red"]::before {
+  background-color: var(--clr-accent-red);
+}
+.feature-section__card[data-accent="orange"]::before {
+  background-color: var(--clr-accent-orange);
+}
+.feature-section__card[data-accent="blue"]::before {
+  background-color: var(--clr-accent-blue);
+}
+.feature-section__card-title {
+  /* preset 3 */
+  font-size: var(--fs-preset-3);
+  font-weight: var(--fw-semibold);
+  letter-spacing: var(--ls-none);
+  line-height: var(--lh-135);
+}
+.feature-section__card-desc {
+  /* preset 5 */
+  color: var(--neutral-grey-400);
+  font-size: var(--fs-preset-5);
+  font-weight: var(--fw-regular);
+  letter-spacing: var(--ls-none);
+  line-height: var(--lh-160);
+
+  margin-block-start: 0.5rem;
+  margin-block-end: 2rem;
+}
+.feature-section__card-img {
+  align-self: flex-end;
+}
+
+/* Tablet 768px */
+@media only screen and (min-width: 48rem) {
+}
+/* Desktop 1440px */
+@media only screen and (min-width: 90rem) {
 }
