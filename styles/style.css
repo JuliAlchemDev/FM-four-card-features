@@ -7,9 +7,14 @@ body {
   color: var(--neutral-grey-500);
 }
 .feature-section {
-  margin: var(--spacing-500) var(--spacing-400);
+
   display: grid;
+  min-height: 100vh;
+  place-content: center;
   gap: 3.75rem;
+  margin: var(--spacing-500) var(--spacing-400);
+
+
 }
 /* Header */
 .feature-section__header {
@@ -54,7 +59,8 @@ body {
   position: relative;
   overflow: hidden;
   min-height: 15.5rem;
-  max-width: 21.5rem;
+  /* max-width: 21.5rem; */
+  width: 100%;
   box-shadow: 0 15px 20px 0 hsla(212, 86%, 64%, 0.2);
 }
 .feature-section__card::before {
@@ -112,6 +118,8 @@ body {
   .feature-section__card {
     justify-self: center;
     align-self: center;
+    max-width: 21.5rem;
+
   }
   .feature-section__card[data-accent="red"] {
     grid-column: span 2;
