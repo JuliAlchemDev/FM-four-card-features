@@ -10,7 +10,9 @@ body {
 
   display: grid;
   min-height: 100vh;
-  place-content: center;
+
+  align-content: start;
+  justify-items: center;
   gap: 3.75rem;
   margin: var(--spacing-500) var(--spacing-400);
 
@@ -108,9 +110,12 @@ body {
 @media only screen and (min-width: 48rem) {
   /* Header */
   .feature-section {
-    gap: 74px;
+    gap: 4.6rem;
   }
+  .feature-section__header {
+    max-width: 33.75rem;
 
+  }
   /* Cards */
   .feature-section__cards {
     grid-template-columns: repeat(2, max-content);
