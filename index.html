@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
     <!-- Fonts Preload -->
     <link
@@ -28,59 +33,101 @@
       type="font/woff2"
       crossorigin
     />
-  <!-- Styles -->
-   <link rel="stylesheet" href="./styles/_reset.css">
-   <link rel="stylesheet" href="./styles/_custom.css">
-   <link rel="stylesheet" href="./styles/style.css">
-  <title>Frontend Mentor | Four card feature section</title>
+    <!-- Styles -->
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/custom.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <title>Frontend Mentor | Four card feature section</title>
+  </head>
+  <body>
+    <main class="feature-section">
+      <header class="feature-section__header">
+        <p class="feature-section__summary">Reliable, efficient delivery</p>
+        <h1 class="feature-section__title">Powered by Technology</h1>
+        <p class="feature-section__desc">
+          Our Artificial Intelligence powered tools use millions of project data
+          points to ensure that your project is successful
+        </p>
+      </header>
+      <section class="feature-section__cards">
+        <article
+          class="feature-section__card"
+          aria-labelledby="supervisor-title"
+          data-accent="cyan"
+        >
+          <h2 id="supervisor-title" class="feature-section__card-title">
+            Supervisor
+          </h2>
+          <p class="feature-section__card-desc">
+            Monitors activity to identify project roadblocks
+          </p>
+          <img
+            class="feature-section__card-img"
+            src="./assets/images/icon-supervisor.svg"
+            alt=""
+            width="64"
+            height="64"
+          />
+        </article>
 
+        <article
+          class="feature-section__card"
+          aria-labelledby="team-builder-title"
+          data-accent="red"
+        >
+          <h2 id="team-builder-title" class="feature-section__card-title">
+            Team Builder
+          </h2>
+          <p class="feature-section__card-desc">
+            Scans our talent network to create the optimal team for your project
+          </p>
+          <img
+            class="feature-section__card-img"
+            src="./assets/images/icon-team-builder.svg"
+            alt=""
+            width="64"
+            height="64"
+          />
+        </article>
 
-</head>
-<body>
-  
-  <main class="feature-section">
-    <header class="feature-section__header">
-      <p class="feature-section__summary">Reliable, efficient delivery</p>
-      <h1 class="feature-section__title">Powered by Technology</h1>
-      <p class="feature-section__desc">Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful</p>
-    </header>
-    <section class="feature-section__cards">
-       <article class="feature-section__card" aria-labelledby="supervisor-title" data-accent="cyan">
-      <h2 id='supervisor-title' class="feature-section__card-title">Supervisor</h2>
-      <p class="feature-section__card-desc">Monitors activity to identify project roadblocks</p>
-      <img class="feature-section__card-img" src="./assets/images/icon-supervisor.svg" alt="" width="64" height="64">
-    </article>
-    
-    <article class="feature-section__card" aria-labelledby="team-builder-title" data-accent="red">
-      <h2 id='team-builder-title' class="feature-section__card-title">Team Builder</h2>
-      <p class="feature-section__card-desc">Scans our talent network to create the optimal team for your project</p>
-      <img class="feature-section__card-img" src="./assets/images/icon-team-builder.svg" alt="" width="64" height="64">
-    </article>
+        <article
+          class="feature-section__card"
+          aria-labelledby="karma-title"
+          data-accent="orange"
+        >
+          <h2 id="karma-title" class="feature-section__card-title">Karma</h2>
+          <p class="feature-section__card-desc">
+            Regularly evaluates our talent to ensure quality
+          </p>
+          <img
+            class="feature-section__card-img"
+            src="./assets/images/icon-karma.svg"
+            alt=""
+            width="64"
+            height="64"
+          />
+        </article>
 
-    <article class="feature-section__card" aria-labelledby="karma-title" data-accent="orange">
-      <h2 id='karma-title' class="feature-section__card-title">Karma</h2>
-      <p class="feature-section__card-desc">Regularly evaluates our talent to ensure quality</p>
-      <img class="feature-section__card-img" src="./assets/images/icon-karma.svg" alt="" width="64" height="64">
-    </article>
-  
-    <article class="feature-section__card" aria-labelledby="calculator-title" data-accent="blue">
-      <h2 id='calculator-title' class="feature-section__card-title">Calculator</h2>
-      <p class="feature-section__card-desc">Uses data from past projects to provide better delivery estimates</p>
-      <img class="feature-section__card-img" src="./assets/images/icon-calculator.svg" alt="" width="64" height="64">
-    </article>
-    </section>
-   
-  </main>
-
-
-  
-  
-
-  
-  
-
-  
-  
-</body>
+        <article
+          class="feature-section__card"
+          aria-labelledby="calculator-title"
+          data-accent="blue"
+        >
+          <h2 id="calculator-title" class="feature-section__card-title">
+            Calculator
+          </h2>
+          <p class="feature-section__card-desc">
+            Uses data from past projects to provide better delivery estimates
+          </p>
+          <img
+            class="feature-section__card-img"
+            src="./assets/images/icon-calculator.svg"
+            alt=""
+            width="64"
+            height="64"
+          />
+        </article>
+      </section>
+    </main>
+  </body>
 </html>
